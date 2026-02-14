@@ -19,3 +19,8 @@ print("Creating final video...")
 create_final_video(videos)
 
 print("VIDEO CREATED: output/final_video.mp4")
+
+from create_thumbnail import create_thumbnail
+create_thumbnail()
+print("Thumbnail created!")
+

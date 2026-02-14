@@ -1,9 +1,14 @@
+import os
+import asyncio
+import edge_tts
 
-import edge_tts, asyncio
+async def text_to_speech(text):
+    # 🔥 create output folder automatically
+    os.makedirs("output", exist_ok=True)
 
-async def text_to_speech(text, output="output/voice.mp3"):
-    communicate = edge_tts.Communicate(text, "en-US-GuyNeural")
-    await communicate.save(output)
+    communicate = edge_tts.Communicate(text, voice="en-US-AriaNeural")
+    await communicate.save("output/voice.mp3")
 
 def generate_voice(script):
     asyncio.run(text_to_speech(script))
+

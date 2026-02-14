@@ -1,0 +1,31 @@
+Ai-Video-Generator
+
+https://youtu.be/yXFF8oz9mwY
+
+https://github.com/sukumarpatel566/ai-video-generation-pipeline
+
+https://drive.google.com/file/d/1_LWliBzr3GC6H94IvqeGXVGlkq6WipaE/view?usp=sharing
+
+AI Video Generation Pipeline –
+
+I built an end-to-end automated pipeline that generates a YouTube-ready video from a single topic input. The system takes a topic, generates a script using an LLM (Groq), converts the script into voice narration using Edge-TTS, fetches relevant stock videos from the Pexels API, and automatically edits them together using MoviePy to produce a final video.
+
+The entire pipeline runs with one command and requires no manual editing, fulfilling the requirement of full automation using free tools.
+
+Tools Used
+
+Python
+
+Groq API (script generation)
+
+Edge-TTS (voiceover)
+
+Pexels API (video footage)
+
+MoviePy + FFmpeg (video editing)
+
+Biggest Challenge
+Managing API limits and model deprecations while keeping the pipeline fully free. I solved this by switching to Groq’s free LLM and ensuring all steps run locally.
+
+Improvements
+Future improvements would include auto-thumbnail generation, subtitle generation, and direct YouTube upload integration.
